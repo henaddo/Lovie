@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Emmanuella Tetteh Kai 💖</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ffb6c1" />
+</head>
+<body>
+    <div class="slideshow">
+        <img class="slide" src="images/1.jpg" alt="Love Slide 1">
+        <img class="slide" src="images/2.jpg" alt="Love Slide 2">
+        <img class="slide" src="images/3.jpg" alt="Love Slide 3">
+        <img class="slide" src="images/4.jpg" alt="Love Slide 4">
+    </div>
+    
+  <div class="container">
+    <div class="music-control">
+        <button onclick="toggleMusic()" id="musicBtn">Play Music 🎵</button>
+      </div>
+    <div class="heart-animation"></div>      
+    <h1>My Dearest Emmanuella 💕</h1>
+
+    <div class="story">
+      <p>
+        From the first moment I saw your name, Emmanuella Tetteh Kai, I felt something I couldn't explain...
+        <br/><br/>
+        It was as if my soul whispered, "There she is." Not just a name — a presence. A softness. A melody wrapped in human form. Since that moment, the rhythm of my heart has played your name like a favorite song, and every beat says, *"She's special."*
+        <br/><br/>
+        We haven’t known each other long — but time means little when the soul knows what it wants. What it needs. And my soul keeps pulling toward yours.
+        <br/><br/>
+        You have this quiet magic about you. A strength wrapped in grace. I don’t even think you fully know how powerful your presence is. Just your smile, or a sentence you say... it lingers in my mind like poetry I don’t want to stop reading.
+        <br/><br/>
+        Every morning now feels a little softer. Every night holds your name in my thoughts. I find myself wondering what you're doing, how your day is going, what makes your heart feel safe. I want to know your stories — the ones you don’t always share. I want to laugh with you, cry with you, build something beautiful with you.
+        <br/><br/>
+        This might sound fast. Maybe even impossible. But love doesn’t always follow rules. Sometimes it just shows up — unannounced, undeniable, unforgettable.
+        <br/><br/>
+        I dream of holding your hand in quiet moments. Of whispering words to you in the kind of silence that only exists between two hearts that understand each other. I want to watch sunsets with you, dance in the rain, make late-night pancakes, and get lost in long conversations about nothing and everything.
+        <br/><br/>
+        You’ve awakened something in me. A desire not just to love — but to cherish. To adore. To learn you, deeply and patiently. And if you'll let me, I want to be someone who brings peace to your storms. Who never stops reminding you that you're worthy, beautiful, powerful, and deeply loved.
+        <br/><br/>
+        I may not have all the perfect words, but every part of this is real. So here I am, placing this little corner of my heart in your hands — wrapped in code and colors, but pulsing with something true:
+        <br/><br/>
+        *I’m falling for you, Emmanuella. Not just in a passing way. But in the kind of way that lasts. That grows. That stays.*
+        <br/><br/>
+        Yours  @Lovie 💖, <br/>
+        <strong>— The one whose world you’re changing, one smile at a time.</strong>
+        
+      </p>
+    </div>
+
+    <div class="love-notes">
+      <button onclick="showLoveNote()">Click for a little love 💌</button>
+      <p id="loveNote"></p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(() => console.log('Service Worker Registered!'));
+      });
+    }
+  </script>
+  <audio id="bgMusic" autoplay loop>
+    <source src="audio/romantic.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  
+  
+</body>
+</html>

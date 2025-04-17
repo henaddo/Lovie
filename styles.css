@@ -1,0 +1,190 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Georgia', serif;
+    color: #4b1e28;
+    overflow-x: hidden;
+    background-color: #fff0f5;
+  }
+  
+  /* Background Slideshow */
+  .slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    opacity: -2;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  /* Main container */
+  .container {
+    position: relative;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: rgba(255, 250, 250, 0.93);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    z-index: 1;
+    opacity: 3;
+  }
+  
+  /* Headline */
+  h1 {
+    font-size: 32px;
+    color: #d6336c;
+    margin-bottom: 20px;
+  }
+  
+  /* Story section */
+  .story {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 18px;
+    color: #5a2d43;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  
+
+  /* Love notes */
+  .love-notes {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 12px 25px;
+    background: #d6336c;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #a02049;
+  }
+  
+  #loveNote {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ff007f;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  /* Heart pulse animation */
+  .heart-container {
+    margin: 25px 0;
+  }
+  
+  .heart {
+    width: 100px;
+    height: 90px;
+    position: relative;
+    background: #d6336c;
+    transform: rotate(-45deg);
+    margin: 0 auto;
+    animation: pulse 1s infinite;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background: #d6336c;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -50px;
+    left: 0;
+  }
+  
+  .heart::after {
+    left: 50px;
+    top: 0;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(1.1) rotate(-45deg);
+    }
+    100% {
+      transform: scale(1) rotate(-45deg);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      margin: 30px 10px;
+      padding: 20px;
+    }
+  
+    .story {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 26px;
+    }
+  
+    button {
+      font-size: 15px;
+      padding: 10px 20px;
+    }
+  
+    #loveNote {
+      font-size: 18px;
+    }
+  }
+  
+
+  .music-control {
+    margin-top: 30px;
+  }
+  
+  .music-control button {
+    padding: 10px 20px;
+    background-color: #8b005d;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .music-control button:hover {
+    background-color: #5a003c;
+  }
+  
